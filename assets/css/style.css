@@ -1,0 +1,177 @@
+/* Global */
+* { 
+    box-sizing: border-box; 
+    margin:0; 
+    padding:0; 
+}
+
+
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    background:#0f172a; 
+    color:#fff; 
+    padding:20px; 
+}
+
+/* Header */
+header { 
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center;
+    margin-bottom:25px;
+    }
+
+/* Buttons */
+button { 
+    background:#f97316; 
+    border:none; padding:10px 14px; 
+    border-radius:8px; 
+    font-weight: bolder;
+    color:#fff; 
+    cursor:pointer; 
+    transition:0.3s; 
+}
+
+
+button:hover { 
+    background:#ea580c; 
+}
+
+/* Floating cart */
+.floating-cart { 
+    position:fixed; 
+    bottom:20px; 
+    right:20px; 
+    border-radius:50%; 
+    padding:15px; 
+    font-size:18px; 
+    z-index:1000; 
+}
+
+/* Filters */
+.filters { 
+    text-align:center; 
+    margin-bottom:20px; 
+}
+
+
+.filters button { 
+    margin:5px; 
+}
+
+/* Menu grid */
+#menu { 
+    display:grid; 
+    grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); 
+    gap:20px; 
+}
+
+/* Cards */
+.card { 
+    background:#1e293b; 
+    padding:15px; 
+    border-radius:12px; 
+    transition:0.3s; 
+    animation:fadeIn 0.5s ease forwards; 
+    text-align:center; 
+}
+
+
+.card:hover { 
+    transform:translateY(-5px); 
+}
+
+
+.card img { 
+    width:100%; 
+    height:150px; 
+    object-fit:cover; 
+    border-radius:10px;
+    margin-bottom:10px; 
+    transition:0.3s; 
+}
+
+
+.card:hover img { 
+    transform:scale(1.05); 
+}
+
+
+.price { 
+    color:#f97316; 
+    font-weight:bold; 
+    margin:5px 0; 
+}
+
+/* Cart Sidebar */
+.cart-sidebar { 
+    position:fixed; 
+    top:0; 
+    right:-320px; 
+    width:300px; 
+    height:100%; 
+    background:#020617; 
+    padding:20px; 
+    transition:0.4s; 
+    overflow-y:auto; 
+    z-index:999; 
+}
+
+
+.cart-sidebar.active { 
+    right:0; 
+}
+
+/* Cart Items */
+.cart-item { 
+    display:flex; 
+    justify-content:space-between; 
+    margin:10px 0; 
+    background:#1e293b; 
+    padding:10px; 
+    border-radius:8px; 
+}
+
+/* Booking Form */
+form { 
+    margin-top:20px; 
+    display:flex; 
+    flex-direction:column; 
+}
+
+
+input { 
+    margin:6px 0; 
+    padding:10px; 
+    border-radius:6px; 
+    border:none; 
+    width: 80%;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+#bookingForm button {
+    width: 80%;
+}
+
+/* Toast */
+.toast { 
+    position:fixed; 
+    bottom:20px; 
+    left:20px; 
+    background:#22c55e; 
+    padding:12px 20px; 
+    border-radius:8px; 
+    opacity:0; 
+    transition:0.4s; 
+}
+
+
+.toast.show { 
+    opacity:1; 
+}
+
+/* Animations */
+@keyframes fadeIn { from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:translateY(0);} }

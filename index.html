@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodies Restaurant App</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>🍔 Foodies</h1>
+  <button class="floating-cart" onclick="toggleCart()">🛒</button> 
+</header>
+
+<section class="filters">
+  <button onclick="filterMenu('all')">All</button>
+  <button onclick="filterMenu('pizza')">Pizza</button>
+  <button onclick="filterMenu('burger')">Burger</button>
+  <button onclick="filterMenu('drinks')">Drinks</button> 
+</section>
+
+<section id="menu"></section>
+
+<!-- Cart Sidebar -->
+<div id="cartSidebar" class="cart-sidebar">
+  <h2>🛒 Your Cart</h2>
+  <div id="cart"></div>
+  <p>Total: $<span id="total">0</span></p>
+</div>
+
+<!-- Booking Form -->
+<h2>📅 Book a Table</h2>
+<form id="bookingForm">
+  <input type="text" id="name" placeholder="Name" required>
+  <input type="date" id="date" required>
+  <input type="time" id="time" required>
+  <button type="submit">Book</button>
+</form>
+
+<!-- Toast Notification -->
+<div id="toast" class="toast"></div>
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
