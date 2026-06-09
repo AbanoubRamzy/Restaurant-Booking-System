@@ -35,7 +35,7 @@ foodies-restaurant-app/
 
 ## 📸 Images
 
-The food images used in this project are sourced from Pexels.com and are not my original work. All image rights belong to their respective creators.
+The food images used in this project are sourced from (https://www.pexels.com/) and are not my original work. All image rights belong to their respective creators.
 
 ## 📖 About
 
