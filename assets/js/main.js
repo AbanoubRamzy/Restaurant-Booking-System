@@ -1,6 +1,6 @@
 // Menu data
 const menuData = [
-  { id:1,name:"Margherita Pizza",category:"pizza",price:14,img:"./assets/images/mrgarita.jpg" },
+  { id:1,name:"Margarita Pizza",category:"pizza",price:14,img:"./assets/images/margarita.jpg" },
   { id:2,name:"Pepperoni Pizza",category:"pizza",price:17,img:"./assets/images/pepperoni.jpg" },
   { id:3,name:"Hawaiian Pizza",category:"pizza",price:22,img:"./assets/images/hawaiian.jpg" },
   { id:4,name:"Four Cheese Pizza",category:"pizza",price:19,img:"./assets/images/four-cheese.jpg" },
