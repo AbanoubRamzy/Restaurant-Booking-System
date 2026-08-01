@@ -4,7 +4,7 @@ const menuData = [
   { id:2,name:"Pepperoni Pizza",category:"pizza",price:17,img:"./assets/images/pepperoni.jpg" },
   { id:3,name:"Hawaiian Pizza",category:"pizza",price:22,img:"./assets/images/hawaiian.jpg" },
   { id:4,name:"Four Cheese Pizza",category:"pizza",price:19,img:"./assets/images/four-cheese.jpg" },
-  { id:5,name:"Marinara Pizza",category:"pizza",price:15,img:"./assets/images/marinara.jpg" },
+  { id:5,name:"Marinara Pizza",category:"pizza",price:15,img:"./assets/images/Marinara.jpg" },
 
   { id:6,name:"Cheese Burger",category:"burger",price:10,img:"./assets/images/cheese-burger.jpg" },
   { id:7,name:"Chicken Burger",category:"burger",price:11,img:"./assets/images/chickenburger.jpg" },
